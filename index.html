@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Anni">
+  <title>Villa Hilla | Etusivu</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Story+Script&display=swap" rel="stylesheet" type="text/css">
+
+  <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-section">
+        <img src="logo.jpg" alt="Villa Hilla logo" class="logo">
+        <h1 class="site-name">Villa Hilla</h1>
+      </div>
+
+      <nav class="main-navigation">
+        <button class="menu-toggle" aria-label="Avaa valikko">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="#Yhteystiedot">Yhteystiedot</a></li>
+          <li><a href="asunto.html">Asunto</a></li>
+          <li><a href="saapuminen.html">Saapuminen</a></li>
+          <li><a href="vinkkeja.html">Vinkkejä</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Villa Hilla – suomalainen majoitus Valenciassa</h2>
+
+      <p>Tervetuloa Valenciaan, paellan ja appelsiinien kotikaupunkiin!</p>
+      
+      <p>Villa Hilla on suomalaisomisteinen lyhytvuokrauskohde Valenciassa, Espanjassa. 
+      Se on moderni asuinhuoneisto, jossa voi majoittua jopa kahdeksan henkilöä.</p>
+
+      <img src="talo.jpeg" alt="Villa Hilla rakennus" class="kuva">
+
+      <p>Huoneisto sijaitsee elämäniloisessa, autenttisessa Marxalenesin kaupunginosassa, 
+      jossa palvelut ovat lähellä ja keskustaan on matkaa vain 3 km.</p>
+
+      <img src="olohuone.jpg" alt="Villa Hilla olohuone" class="kuva">
+    </section>
+  </main>
+
+<footer id="Yhteystiedot" class="laatikko-footer">
+  <div class="footer-container">
+    <p>Voit tiedustella varaustilannetta soittamalla tai tekstiviestitse <strong>040 123 4567</strong> tai 
+    sähköpostitse osoitteesta <strong>info@villahilla.fi</strong></p>
+    <p>¡Bienvenido a todos!</p>
+  </div>
+</footer>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
+  });
+</script>
+</body>
+
+</html>
