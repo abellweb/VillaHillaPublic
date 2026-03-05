@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Anni">
+    <meta name="description" content="Villa Hilla Suomalainen majoitus Valenciassa">
+    <title>Villa Hilla | Saapuminen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Story+Script&display=swap"
+        rel="stylesheet" type="text/css">
+
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand-section">
+                <img src="logo.jpg" alt="Villa Hilla logo" class="logo">
+                <h1 class="site-name">Villa Hilla</h1>
+            </div>
+
+            <nav class="main-navigation">
+                <button class="menu-toggle" aria-label="Avaa valikko">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="#Yhteystiedot">Yhteystiedot</a></li>
+                    <li><a href="asunto.html">Asunto</a></li>
+                    <li><a href="saapuminen.html">Saapuminen</a></li>
+                    <li><a href="vinkkeja.html">Vinkkejä</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Saapuminen</h2>
+
+            <div class="content-nav" style="text-align: center; margin-bottom: 20px;">
+                <a href="#Lentokentalta">Lentokentältä</a> |
+                <a href="#Rautatieasemalta">Rautatieasemalta</a> |
+                <a href="#Bussiterminaalista">Bussiterminaalista</a>
+            </div>
+            <div class="wrapper">
+                <div class="content">
+
+                    <a href="maisema.jpg" target="_blank">
+                    <img src="maisema.jpg" alt="Katumaisemaa Valenciassa" class="kuva"></a>
+                    
+                    <article id="Lentokentalta">
+                        <h3>Lentokentältä</h3>
+                        <p>Villa Hillaa lähin lentokenttä on Valencian lentoasema (VLC), tunnetaan myös nimellä Manises.
+                            Se sijaitsee n. 11 km päässä. Autolla tai taksilla matka kestää n. 25 min, julkisilla n. 55
+                            min.</p>
+                        <ul>
+                            <li>Seuraa metron opasteita linjalle <strong>nro 3</strong> (suunta Rafelbunyol).</li>
+                            <li>Aja 15 pysäkkiä asemalle <strong>Benimaclet</strong>.</li>
+                            <li>Vaihda raitiovaunuun <strong>nro 4</strong> (suunta Mas del Rosari).</li>
+                            <li>Jää pois pysäkillä <strong>Marxalenes</strong> (5 pysäkkiä). Villa Hilla on 100 metrin
+                                päässä.</li>
+                            <li>Kertalippu: 4,80 € (ostettavissa automaatista).</li>
+                        </ul>
+                    </article>
+
+                    <article id="Rautatieasemalta">
+                        <h3>Rautatieasemalta</h3>
+                        <p>Päärautatieasemalta (Estación del Norte) kulkee <strong>bussi nro 28</strong>.</p>
+                        <ul>
+                            <li>Ylitä Calle de Xativa -katu aseman edessä.</li>
+                            <li>Bussin 28 päätepysäkki (suunta Ciutat de l’Artista Faller) on vasemmalla.</li>
+                            <li>Jää pois pysäkillä <strong>Burjassot – Marxalenes</strong> (8 pysäkkiä).</li>
+                            <li>Seuraa puiston muuria Villa Hillalle (n. 300 m).</li>
+                            <li>Kertalippu: 2,80 €.</li>
+                        </ul>
+                        <a href="pysakki.jpg" target="_blank">
+                        <img src="pysakki.jpg" alt="Marxalenes-pysäkki" class="kuva"></a>
+                    </article>
+
+                    <article id="Bussiterminaalista">
+
+                        <h3>Bussiterminaalista</h3>
+                        <p>Bussiterminaalista on Villa Hillaan 15 min / 1,2 km kävelymatka tai 6 min taksimatka.</p>
+                        <ul>
+                            <li>Käänny pääovilta vasemmalle (Av. de Menendez Pidal).</li>
+                            <li>300 m päästä vasemmalle (Calle del Pare Ferris).</li>
+                            <li>180 m päästä oikealle (Calle Gregori Gea).</li>
+                            <li>Jatka suoraan risteyksen yli (Calle de Malaga).</li>
+                            <li>320 m päästä vasemmalle (Calle del Periodista Llorente).</li>
+                            <li>350 m päästä vasemmalle holvikaaren ali – Villa Hilla on oikealla.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="Yhteystiedot" class="laatikko-footer">
+        <div class="footer-container">
+            <p>Voit tiedustella varaustilannetta soittamalla tai tekstiviestitse <strong>040 123 4567</strong> tai
+                sähköpostitse osoitteesta <strong>info@villahilla.fi</strong></p>
+            <p>&iexcl Bienvenido a todos!</p>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

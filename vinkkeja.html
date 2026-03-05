@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Anni">
+    <meta name="description" content="Villa Hilla Suomalainen majoitus Valenciassa">
+    <title>Villa Hilla | Vinkkejä</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Story+Script&display=swap"
+        rel="stylesheet" type="text/css">
+
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand-section">
+                <img src="logo.jpg" alt="Villa Hilla logo" class="logo">
+                <h1 class="site-name">Villa Hilla</h1>
+            </div>
+
+            <nav class="main-navigation">
+                <button class="menu-toggle" aria-label="Avaa valikko">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="#Yhteystiedot">Yhteystiedot</a></li>
+                    <li><a href="asunto.html">Asunto</a></li>
+                    <li><a href="saapuminen.html">Saapuminen</a></li>
+                    <li><a href="vinkkeja.html">Vinkkejä</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+
+            <h2>Vinkkejä Valenciaan</h2>
+
+            <h3>Marxalenesin kaupunginosan palveluita</h3>
+
+            <div class="kartta">
+                <a href="kartta.jpg" target="_blank">
+                    <img src="kartta.jpg" alt="Marxalenesin kartta" class="karttakuva"></a>
+                <div class="karttateksti">
+                    <ol>
+                        <li>Villa Hilla</li>
+                        <li>Raitiovaunupysäkki</li>
+                        <li>Terveysasema, avoinna arkisin</li>
+                        <li>Marxalenesin puisto (leikkipaikkoja, museo ja kahvila)</li>
+                        <li>Bussipysäkki Burjassot-Marxalenes</li>
+                        <li>Mercadona-supermarket</li>
+                        <li>Apteekki</li>
+                        <li>Pankkiautomaatti</li>
+                    </ol>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <div class="content">
+                    <h3>Mitä tehdä Valenciassa?</h3>
+
+                    <article>
+                        <h4>Mennään uimaan!</h4>
+                        <p>Raitiovaunulla 4 pääset asunnon edestä suoraan kuuluisalle Malvarrosan rannalle (rantaeväät
+                            kannattaa hakea matkan varrelta El Cabanyalin kauppahallista). Kesäkuukausina on avoinna
+                            myös Benicalapin puiston maauimala n. 15 min kävelymatkan päässä Villa Hillasta.</p>
+                        <img src="katu.jpg" alt="El Cabanyalin katumaisema" class="kuva">
+                    </article>
+
+                    <article>
+                        <h4>Ihaillaan taidetta!</h4>
+                        <p>Kävelymatkan päässä Villa Hillasta on sekä <strong>Bombas Gens Centre d’Arts
+                                Digitals</strong>
+                            -taidegalleria, jossa on vaihtuvia näyttelyitä, että <strong>IVAM</strong> eli Valencian
+                            modernin
+                            taiteen museo, joka esittelee espanjalaista nykytaidetta.</p>
+                    </article>
+
+                    <article>
+                        <h4>Shoppaillaan kuin paikalliset!</h4>
+                        <p>Tiistaisin ja lauantaisin aamuvarhaisesta n. puoleen päivään levittäytyvät Carrer de la Serra
+                            Martés
+                            -kadulle ja sen lähiympäristöön perinteiset markkinat. Sieltä löydät kaiken mitä kuvitella
+                            saattaa
+                            alushousuista aurinkovarjoihin. Samalla alueella on myös pieni Benicalapin kauppahalli
+                            tuliaisherkkuja varten.</p>
+                        <a href="kauppahalli.jpg" target="_blank">
+                            <img src="kauppahalli.jpg" alt="Kauppahallin hedelmätiski" class="kuva"></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="Yhteystiedot" class="laatikko-footer">
+        <div class="footer-container">
+            <p>Voit tiedustella varaustilannetta soittamalla tai tekstiviestitse <strong>040 123 4567</strong> tai
+                sähköpostitse osoitteesta <strong>info@villahilla.fi</strong></p>
+            <p>&iexcl Bienvenido a todos!</p>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

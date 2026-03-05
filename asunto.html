@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Anni">
+    <meta name="description" content="Villa Hilla Suomalainen majoitus Valenciassa">
+    <title>Villa Hilla | Asunto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Story+Script&display=swap"
+        rel="stylesheet" type="text/css">
+
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand-section">
+                <img src="logo.jpg" alt="Villa Hilla logo" class="logo">
+                <h1 class="site-name">Villa Hilla</h1>
+            </div>
+
+            <nav class="main-navigation">
+                <button class="menu-toggle" aria-label="Avaa valikko">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="#Yhteystiedot">Yhteystiedot</a></li>
+                    <li><a href="asunto.html">Asunto</a></li>
+                    <li><a href="saapuminen.html">Saapuminen</a></li>
+                    <li><a href="vinkkeja.html">Vinkkejä</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper">
+                <div class="content">
+                    <h2>Asunto</h2>
+                    <a href="pohjapiirros.jpg" target="_blank">
+                    <img src="pohjapiirros.jpg" alt="Villa Hilla pohjapiirros" class="pohjapiirros"></a>
+
+                    <p>Villa Hilla sijaitsee tavallisen asuinkerrostalon 5. kerroksessa. Ulko-ovella on 5 cm korkea
+                        kivetys ja
+                        ovensuussa 2 cm korkea kynnys, mutta muuten kulku hissille on esteetön. Ulko-oven ja hissin oven
+                        leveys on
+                        0,9 metriä. Hissiin mahtuu lastenvaunut tai pyörätuoli. Huoneiston ulko-oven ja sisäovien leveys
+                        on 0,8
+                        metriä. Huoneisto ei valitettavasti ole täysin esteetön.</p>
+
+                    <p>Villa Hillassa on kolme makuuhuonetta, joista kahdessa on 160 cm leveä parivuode ja yhdessä on
+                        kerrossänky 90
+                        cm leveillä vuoteilla, joissa aikuisetkin mahtuvat nukkumaan. Lisäksi olohuoneessa on
+                        vuodesohva, johon saa
+                        sijattua vuoteet kahdelle henkilölle.</p>
+
+                    <a href="olohuone.jpg" target="_blank">
+                    <img src="makuuhuone.jpg" alt="Villa Hilla makuuhuone" class="kuva"></a>
+
+                    <p>Huoneiston keittiö on täysin varusteltu. Kylpyhuoneessa on suihkukaappi, lavuaari, bideesuihku ja
+                        wc-istuin.
+                        Erillis-wc:ssä on lavuaari ja wc-istuin. Lisäksi huoneistossa on iso parveke, jossa mahtuu
+                        kuivattamaan pyykkiä ja ihmettelemään kadun vilinää.</p>
+
+                    <a href="keittio.jpg" target="_blank">
+                    <img src="keittio.jpg" alt="Villa Hilla keittiö" class="kuva"></a>
+
+                    <p>Lisämaksusta 15 €/majoittuja tarjoamme liinavaatteet ja pyyhkeet lomasi ajaksi. Pyynnöstä
+                        saatavilla on
+                        vauvan matkasänky, lasten muovinen astiasto, potta ja syöttötuoli.</p>
+
+                    <a href="lastenhuone.jpg" target="_blank">    
+                    <img src="lastenhuone.jpg" alt="Villa Hilla lastenhuone" class="kuva"></a>
+
+                    <h3>Huoneistosta löytyy:</h3>
+                    <ul>
+                        <li>Ilmainen wifi</li>
+                        <li>Ilmastointilaite joka makuuhuoneesta ja olohuoneesta</li>
+                        <li>Tv keittiössä, olohuoneessa (Chromecast) ja parisängyllisissä makuuhuoneissa</li>
+                        <li>Hiustenkuivaaja, siirrettävä lämmitin pesu/wc-tiloihin</li>
+                        <li>Keittiössä induktioliesi, kiertoilmauuni, mikroaaltouuni, jääkaappi-pakastin, vedenkeitin,
+                            kahvinkeitin,
+                            leivänpaahdin, pyykinpesukone, astiasto 10 hengelle</li>
+                        <li>Muutamia suomenkielisiä lautapelejä ja lastenkirjoja</li>
+                        <li>Ulkoleluja lainaksi puistoon tai rannalle</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="Yhteystiedot" class="laatikko-footer">
+        <div class="footer-container">
+            <p>Voit tiedustella varaustilannetta soittamalla tai tekstiviestitse <strong>040 123 4567</strong> tai
+                sähköpostitse osoitteesta <strong>info@villahilla.fi</strong></p>
+            <p>&iexcl Bienvenido a todos!</p>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
