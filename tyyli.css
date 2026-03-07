@@ -219,9 +219,10 @@ nav {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0 0;
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: inherit;
-  place-items: center;
+display: flex;
+  justify-content: center; 
+  align-items: center;    
+  min-height: 80px;
 }
 
 .footer-container {
